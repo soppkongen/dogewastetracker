@@ -1,0 +1,27 @@
+Enhance the ‘DOGE Waste’ web app at doge-waste-tracker-lokesvendsen44.replit.app/ to make it engaging, with a longer feed, and add these features while keeping the existing dark #0D0D0D/#1A1A1A/#2A2A2A palette, #FFD700/#FF4500 accents, Orbitron/Roboto fonts, and 15px rounded shapes. Here’s the spec:
+Extend the Feed:
+Current feed shows only 2 items—expand it to display at least 10 waste items (official and community) at once, with infinite scroll or pagination. Cards should stay 300px wide, auto-height, gold #FFD700 borders, dark #1A1A1A bg, with bold yellow #FFD700 headlines (24px Orbitron) and gray #B0B0B0 subtext (16px Roboto). Add a subtle fade-in animation for each card as it loads (0.5s opacity 0 to 1).
+
+Use existing data (DOGE/GAO or community tips) or mock 8 more items if needed—e.g., “$100M on Alien Probes,” “$15M on Ghost Town Wi-Fi.”
+Boost User Engagement:
+Make the landing page grab attention—replace or enhance the welcome screen with a dynamic “Tip of the Day” (350px wide, #2A2A2A bg, gold #FFD700 star blinking every 5s) plus a spinning “Total Waste Tracked” counter (e.g., “$2.5B Saved!” in #FF4500, 36px Orbitron, 1s spin animation). Add a “Join the Hunt” button (#FFD700, 150px wide, 50px tall, 18px Orbitron) that jumps users to the “Hunt Waste” tab with a bounce effect.
+
+Ensure cards have vibrant hover effects (scale 1.05, 0.2s) and share buttons pulse faintly (opacity 1.0 to 0.8, 2s loop) to draw eyes.
+Achievement Notifications:
+Add toast notifications (top-right, 300px wide, 80px tall, #FFD700 bg, #0D0D0D text, 15px rounded) that fade in/out (0.5s bounce, 3s fade) when users earn points or ranks—e.g., “Waste Hunter Unlocked! +10 pts” or “Bloat Buster Rank Achieved!”
+
+Trigger on tip submissions or leaderboard updates, using existing point logic.
+Visual Rank Badges:
+Display animated badges next to usernames on the leaderboard—50px circles, spinning 360° on unlock (1s). Colors: #FF4500 for Rookie (0-99 pts), #FFD700 for mid-tier (100-499 pts), #FFFFFF with gold border for top (500+ pts). Pulse faintly (opacity 1.0 to 0.8, 2s).
+
+Show badges on user profiles or tip submissions too.
+Impact Score Counter:
+Add a fixed header bar (60px tall, #1A1A1A bg) with a personal “$X Tracked” counter (#FF4500, 20px Orbitron) that spins up (slot-machine style, 20 steps over 1s) when tips are verified. E.g., “$3.3M Tracked” for WasteHunter.
+Tip of the Day:
+Pin a featured waste report above the feed—350px wide, #2A2A2A bg, #FFFFFF 24px Orbitron headline, #B0B0B0 16px Roboto subtext, gold #FFD700 star (20px, blinks every 5s). Include a share button (#FF4500, 40px circle). Rotate daily from official/community data or mock it if needed.
+Share Card Preview:
+On share button clicks, open a modal (400px wide, 600px tall, #0D0D0D bg, 15px rounded) showing how the card looks on X or text—card preview (#1A1A1A, gold border), X frame (#1DA1F2), editable text box (100px tall, #FFFFFF bg), and “Share Now” button (#FFD700, 100px wide, 18px Orbitron).
+Tech:
+Use React for frontend (smooth scrolling, animations), Node.js/Express for backend (data pulls, point tracking). Leverage Replit’s key-value store or SQLite for persistence. Keep existing design intact, just scale up engagement and functionality.
+Make it pop—dark, bold, and irresistible. Start with mock data if real DOGE/GAO feeds aren’t live yet. Go
+

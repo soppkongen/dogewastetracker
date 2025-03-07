@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doge Waste Tracker</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffcc00;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* CTA Button */
+        .cta-btn {
+            background-color: #ff9900;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .cta-btn:hover {
+            background-color: #e68a00;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            .cta-btn {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">🐶 Doge Waste Tracker</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Doge Waste Tracker</h1>
+        <p>Track and manage your Dogecoin-related waste with ease.</p>
+        
+        <!-- Call-to-Action Button -->
+        <button class="cta-btn" onclick="trackWaste()">Start Tracking Now</button>
+        
+        <!-- Feedback Message -->
+        <p id="message" style="color: green; font-weight: bold; display: none;"></p>
+    </div>
+
+    <script>
+        function trackWaste() {
+            document.getElementById("message").innerText = "✅ Tracking started successfully!";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
