@@ -9,6 +9,9 @@
   "start": "node ./dist/index.js"
 },
   "dependencies": {
+    "pg": "^8.11.3",
+    "drizzle-orm": "^0.29.0",
+    "postgres": "^3.3.5",
     "ts-node": "^10.9.1",
     "@emoji-mart/data": "^1.2.1",
     "@emoji-mart/react": "^1.1.1",
